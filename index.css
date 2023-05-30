@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 115px;
+    background: rgba(64, 64, 64, 0.5);
+    z-index: 9999;
+    -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.scroll {
+    background-color: black;
+    height: 100px;
+}
+
+.logo{
+    width: 110px;
+    height: 20px;
+    margin-left: 10vw;
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar{
+    margin-right: 10vw;
+    font-family: 'Inter';
+    font-size: 12px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+ul li{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+#sign-in{
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+#sign-up{
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgba(0, 125, 196, 0.5);
+}
+
+.nav:hover{
+    color: #007DC3;
+}
+
+#sign-in:hover{
+    background-color: black;
+    color: white;
+}
+
+#sign-up:hover{
+    background: #007DC3;
+}
+
+#active-nav{
+    color: #007DC3;
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt{
+    transition: 0.5s;
+    background: white;
+    width: 0px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.search-button{
+    display: flex;
+}
+
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 10px 10px;
+    border-radius: 100px;
+}
+
+.search-txt:focus{
+    width: 240px;
+    padding: 10px 10px;
+    border-radius: 100px;
+}
+
+.car-pict{
+    width: 100%;
+    opacity: 0.8;
+}
+
+.car-bg{
+    background-color: black;
+    position: relative;
+}
+
+.car-text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Homenaje';
+    font-size: 28px;
+    letter-spacing: 0.305em;
+    text-shadow: 0px 6px 3px rgba(0, 0, 0, 0.25);
+}
+
+.car-text button{
+    color: white;
+    font-family: 'Inter';
+    padding: 12px 16px;
+    margin-top: 12px;
+    background-color: #007DC3;
+    border-radius: 5px;
+    transition: transform .2s;
+}
+
+.car-text button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.car-cat{
+    text-align: center;
+    font-family: 'Inria Sans';
+    font-size: 20px;
+    margin-top: 36px;
+}
+
+.explore{
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.cat-card{
+    margin: 28px 10vw 0 10vw;
+    display: grid;
+    grid-template-columns: 305px 305px 305px;
+    justify-content: space-between;
+}
+
+.car{
+    text-align: left;
+    background-color: black;
+    border-radius: 10px;
+    filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.5));
+    transition: all ease-in 0.25s;
+}
+
+.car:hover{
+    cursor: pointer;
+    filter: none;
+}
+
+.car-img{
+    width: 305px;
+    height: 210px;
+    border-radius: 10px;
+}
+
+.car .title{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 4px 12px;
+    letter-spacing: 0.05em;
+}
+
+.car .desc{
+    color: white;
+    font-size: 12px;
+    margin: 0 12px 8px 12px;
+    letter-spacing: 0.05em;
+}
+
+.why-us{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: 'Inria Sans';
+    font-size: 20px;
+    margin-top: 36px;
+    padding-top: 16px;
+}
+
+.why{
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.all-icons{
+    margin: 28px 10vw 0 10vw;
+    padding-bottom: 28px;
+    display: grid;
+    grid-template-columns: 305px 305px 305px;
+    justify-content: space-between;
+}
+
+.part-icon{
+    width: 100px;
+    height: 100px;
+}
+
+.icon .title{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0px 8px;
+    letter-spacing: 0.05em;
+}
+
+.icon .desc{
+    font-size: 12px;
+    letter-spacing: 0.05em;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 292px;
+    background-color: #1A1A1A;
+    font-family: 'Inria Sans';
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.left{
+    margin: 0 auto 0 10vw;
+    padding-top: 101px;
+    position: relative;
+}
+
+#right-border{
+    border-right: 1px solid #007DC3;
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+}
+
+.about{
+    font-size: 16px;
+    width: 305px;
+    margin-top: 16px;
+}
+
+.contact-us{
+    margin-left: auto;
+    margin-top: 101px;
+}
+
+.footer-title{
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration-line: underline;
+    margin-bottom: 12px;
+}
+
+#footer-content{
+    font-size: 16px;
+}
+
+.email{
+    display: flex;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+.phone{
+    display: flex;
+    gap: 4px;
+}
+
+.links{
+    margin: 101px 106px 0 36px;
+}
+
+.link{
+    margin-bottom: 8px;
+}
+
+.follow-us{
+    margin: 101px 10vw 0 auto;
+}
+
+.sm-img{
+    margin-right: 8px;
+}
+
+.a-link{
+    color: white;
+    transition: 0.5s;
+}
+
+.a-link:hover{
+    color: #007DC3;
+}
+
+.bot-text{
+    position: absolute;
+    bottom: 0;
+    font-family: 'Inria Sans';
+    font-size: 12px;
+}

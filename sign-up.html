@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="./Images/M.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
+
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+    <div class = "left">
+        <div class = "content">
+            <p class = "logo">M E R C I</p>
+            <p class = "create">Create New Account</p>
+            <p class = "have-acc">Have an Account?&nbsp;<a href="./sign-in.html">Click here!</a></p>
+        </div>
+    </div>
+    <div class = "sign-up">
+        <div class = "google-sign">
+            <img src="./Images/google-icon.png" alt="">
+            <p class = "google-text">Sign Up via Google</p>
+        </div>
+        <div class = "or">
+            <div class = "line"></div>
+            <p class = "text">or</p>
+            <div class = "line"></div>
+        </div>
+        <form>
+            <div class="textbox-parent">
+                <label class = "text">Full Name</label>
+                <input type="text" class = "textbox" id = "name" required>
+                <p class = "alert" id = "alert1"></p>
+            </div>
+            <div class = "textbox-parent">
+                <label class = "text">Gender</label>
+                <div class = "gender-choice">
+                    <label class = "gender-container">
+                        <input type="radio" id="male" value = "Male" name = "gender">Male
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class = "gender-container">
+                        <input type="radio" id="female" value = "Female" name = "gender">Female
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="textbox-parent">
+                <label class = "text">Phone</label>
+                <input type="text" class = "textbox" id = "phone" required>
+                <p class = "alert" id = "alert2"></p>
+            </div>
+            <div class="textbox-parent">
+                <label class = "text">Email</label>
+                <input type="email" class = "textbox" id = "email" required>
+                <p class = "alert" id = "alert3"></p>
+            </div>
+            <div class = "textbox-parent">
+                <label class = "text">Password</label>
+                <input type="password" class = "textbox" id = "password" required>
+                <p class = "alert" id = "alert4">
+            </div>
+            <div>
+                <label class = "text">Confirm Password</label>
+                <input type="password" class = "textbox" id = "conf-pass" required>
+                <p class = "alert" id = "alert5"></p>
+            </div>
+            <div class = "sign-button">
+                <input type="submit" id = "sign-up" value="Sign Up" onclick="validPass()">
+                
+            </div>
+            <div class = "bottom-text">
+                <p>By registering, I agree to the <span>Terms and Conditions </span>and the <span>Privacy Policy</span></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<script src="./sign-up.js"></script>

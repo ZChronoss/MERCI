@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inria Sans';
+}
+
+a{
+    text-decoration: none;
+    color: #007DC3;
+}
+
+body{
+    margin: 94px 135px 94px 135px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    font-size: 36px;
+    font-family: 'IBM Plex Mono';
+}
+
+.create{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.have-acc{
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.sign-up{
+    border-left: 1px solid black;
+    padding-left: 36px;
+    margin-right: 36px;
+}
+
+.google-sign{
+    cursor: pointer;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #FFFFFF;
+    border: 1px solid #AEAEAE;
+    border-radius: 10px;
+}
+
+.google-text{
+    font-size: 20px;
+}
+
+.or{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 12px;
+}
+
+.line{
+    width: 100%;
+    height: 0;
+    margin-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.or .text{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.textbox-parent{
+    margin-bottom: 20px;
+}
+
+.text{
+    font-size: 20px;
+    display: flex;
+}
+
+.textbox{
+    border: 2px solid black;
+    margin-top: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 44px;
+    padding: 0 8px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.gender-choice{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 5vw;
+}
+
+.gender-container{
+    cursor: pointer;
+}
+
+.genders{
+    cursor: pointer;
+}
+
+.sign-button{
+    display: flex;
+    justify-content: center;
+}
+
+#sign-up{
+    margin-top: 24px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    background: #007DC3;
+    padding: 7px 35px;
+    cursor: pointer;
+}
+
+.alert{
+    display: flex;
+    font-size: 12px;
+    color: red;
+}
+
+.bottom-text{
+    
+    font-size: 12px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+span{
+    color: #007DC3;
+    cursor: pointer;
+}

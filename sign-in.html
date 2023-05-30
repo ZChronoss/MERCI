@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="icon" href="./Images/M.png">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="sign-in.css">
+</head>
+<body>
+    <a class = "back" onclick="history.back()">
+        <img src="./Images/back.png" alt="">
+        <p class = "back-text">Back</p>
+    </a>
+    <div class = "sign-parent">
+        <div class = "sign-in">
+            <div class = "content">
+                <p class = "sign-in-title">Welcome Back!</p>
+                <div class = "google-sign">
+                    <img src="./Images/google-icon.png" alt="">
+                    <p class = "google-text">Sign In via Google</p>
+                </div>
+                <div class = "or">
+                    <div class = "line"></div>
+                    <p class = "text">or</p>
+                    <div class = "line"></div>
+                </div>
+                <form>
+                    <div class="email-phone-parent">
+                        <label class = "text">Email or Phone</label>
+                        <input type="text" class = "textbox" id = "email-phone" required>
+                        <p class = "alert" id = "alert1"></p>
+                    </div>
+                    <div class = "pass">
+                        <label class = "text">Password</label>
+                        <input type="password" class = "textbox" id = "password" required>
+                        <p class = "alert" id = "alert2">
+                    </div>
+                    <button id = "sign-in" type = "submit">Sign In</button>
+                </form>
+                <div class = "bottom-text">
+                    <a class = "forgot" href="">Forgot your password?</a>
+                    <p class = "no-acc">Don't have an account?&nbsp;<a href="./sign-up.html">Click here!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./sign-in.js"></script>

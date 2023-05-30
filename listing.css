@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    z-index: 1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.logo{
+    width: 110px;
+    height: 20px;
+    margin-left: 10vw;
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar{
+    margin-right: 10vw;
+    font-family: 'Inter';
+    font-size: 12px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+ul li{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+#sign-in{
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+#sign-up{
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgba(0, 125, 196, 0.5);
+}
+
+.nav:hover{
+    color: #007DC3;
+}
+
+#sign-in:hover{
+    background-color: black;
+    color: white;
+}
+
+#sign-up:hover{
+    background: #007DC3;
+}
+
+#active-nav{
+    color: #007DC3;
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt{
+    transition: 0.5s;
+    background: white;
+    width: 0px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.search-button{
+    display: flex;
+}
+
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 10px 10px;
+    border-radius: 100px;
+}
+
+.search-txt:focus{
+    width: 240px;
+    padding: 10px 10px;
+    border-radius: 100px;
+}
+
+.list{
+    margin: 24px 10vw 0 10vw;
+    font-family: 'Inria Sans';
+}
+
+.title{
+    padding-top: 100px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sample-list{
+    margin-top: 8px;
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    row-gap: 24px;
+}
+
+.sample{
+    padding-bottom: 20px;
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.sample:hover{
+    cursor: pointer;
+    filter: none;
+}
+
+.sample-img{
+    width: 270px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sample-title{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 12px 4px 12px;
+}
+
+.type{
+    display: flex;
+    align-items: center;
+}
+
+.type-text{
+    margin-left: 4px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 16px;
+    color: #007DC3;
+    margin: 0px 12px 8px 12px;
+}
+
+.info-parent{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    margin-bottom: 4px;
+}
+
+.info{
+    margin-left: 4px;
+    font-weight: 700;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 292px;
+    background-color: #1A1A1A;
+    font-family: 'Inria Sans';
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.left{
+    margin: 0 auto 0 10vw;
+    padding-top: 101px;
+    position: relative;
+}
+
+#right-border{
+    border-right: 1px solid #007DC3;
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+}
+
+.about{
+    font-size: 16px;
+    width: 305px;
+    margin-top: 16px;
+}
+
+.contact-us{
+    margin-left: auto;
+    margin-top: 101px;
+}
+
+.footer-title{
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration-line: underline;
+    margin-bottom: 12px;
+}
+
+#footer-content{
+    font-size: 16px;
+}
+
+.email{
+    display: flex;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+.phone{
+    display: flex;
+    gap: 4px;
+}
+
+.links{
+    margin: 101px 106px 0 36px;
+}
+
+.link{
+    margin-bottom: 8px;
+}
+
+.follow-us{
+    margin: 101px 10vw 0 auto;
+}
+
+.sm-img{
+    margin-right: 8px;
+}
+
+.a-link{
+    color: white;
+}
+
+.a-link:hover{
+    color: #007DC3;
+    transition: 0.5s;
+}
+
+.bot-text{
+    position: absolute;
+    bottom: 0;
+    font-family: 'Inria Sans';
+    font-size: 12px;
+}
